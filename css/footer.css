@@ -1,0 +1,31 @@
+.font-footer-sections-header {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.font-footer-sections-list {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+.font-footer-info-header {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.font-footer-info-data {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.logo-footer {
+    width: 112px;
+    height: 112px;
+    top: 89px;
+    left: 260px;
+}

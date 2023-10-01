@@ -1,0 +1,102 @@
+@import url("./header.css");
+
+@import url("./catalog.css");
+@import url("./advantages.css");
+@import url("./news.css");
+@import url("./contact-form.css");
+
+@import url("./footer.css");
+
+
+:root {
+    --primary-background: rgba(255, 255, 255, 1);
+    --secondary-background: rgba(242, 242, 242, 1);
+
+    --primary-btn-color: rgba(51, 169, 255, 1);
+    --secondary-btn-color: rgba(41, 45, 50, 1);
+
+    --prim-text-color: rgba(41, 45, 50, 1);
+    --sec-text-color: rgba(255, 255, 255, 1);
+    --third-text-color: rgba(131, 131, 131, 1);
+}
+
+/* main-slider / news */
+.font-header-primary {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px; 
+}
+/* catalog / adventages / contacts-form */
+.font-header-secondary {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.font-primary-btn-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.prim-text-color { color: var(--prim-text-color); }
+.sec-text-color { color: var(--sec-text-color); }
+.third-text-color { color: var(--third-text-color); }
+
+
+.primary-btn {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(51, 169, 255, 1);
+    border-radius: 35px;
+    border: none;
+    color: white;
+}
+
+
+
+/* catalog / news */
+.font-primary-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+/* advantages */
+.font-secondary-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--primary-background);
+    
+}
+.wrapper {
+    width: 1920px;
+}
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

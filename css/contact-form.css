@@ -1,0 +1,35 @@
+.text-contact-form-prim {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(131, 131, 131, 1);
+}
+.text-contact-form-sec {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.text-contact-form-data {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    color: rgba(41, 45, 50, 1);
+}
+.text-contact-header {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(131, 131, 131, 1);
+}
+.text-form-header {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: rgba(242, 242, 242, 1);
+}

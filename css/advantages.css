@@ -1,0 +1,13 @@
+.font-advantages-card-header {
+    font-family: Euclid Circular A;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27.9px;
+}
+.text-advantages-card {
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20.29px;
+    color: rgba(183, 183, 183, 1);
+}

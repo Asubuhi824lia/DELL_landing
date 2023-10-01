@@ -1,0 +1,77 @@
+/* main-slider / catalog */
+.font-catalog-card-preheader {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.font-catalog-card-header {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+}
+.font-catalog-card-numbers {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 38px;
+}
+
+
+
+
+.description-text {
+    margin-top: 29px;
+    margin-bottom: 46px;
+}
+
+
+.catalog {
+    margin-top: 164px;
+    margin-bottom: 180px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    grid-template-rows: 371px 371px;
+    grid-gap: 40px;
+}
+
+.container article {
+    border-radius: 20px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container article:nth-child(2n) {
+    background-color: var(--secondary-background);
+}
+.container article:nth-child(2n+1) {
+    background-color: rgba(249, 249, 249, 1);
+}
+.container article:nth-child(1) {
+    background-color: transparent;
+}
+
+.card-number {
+    position: relative;
+    height: 0;
+    top: 40px;
+    left: 40px;
+}
+.preview {
+    position: inherit;
+    bottom: 40px;
+}
+.preview p {
+    margin: 0 40px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
