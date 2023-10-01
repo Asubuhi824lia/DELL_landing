@@ -42,10 +42,16 @@
     line-height: 30px;
 }
 
+.primary-background { background-color: var(--primary-background); }
+.secondary-background { background-color: var(--secondary-background); }
 
 .prim-text-color { color: var(--prim-text-color); }
 .sec-text-color { color: var(--sec-text-color); }
 .third-text-color { color: var(--third-text-color); }
+
+
+.adventages-card-background { background-color: var(--prim-text-color); }
+
 
 
 .primary-btn {
@@ -100,3 +106,11 @@ header, main, footer {
     align-items: center;
 }
 
+main>section {
+    width: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

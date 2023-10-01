@@ -21,25 +21,25 @@
 
 
 
-.description-text {
+.container-description-text {
     margin-top: 29px;
     margin-bottom: 46px;
 }
 
 
 .catalog {
-    margin-top: 164px;
-    margin-bottom: 180px;
+    padding-top: 164px;
+    padding-bottom: 180px;
 }
 
-.container {
+.content {
     display: grid;
-    grid-template-columns: 440px 440px 440px;
-    grid-template-rows: 371px 371px;
+    grid-template-columns: repeat(3, 440px);
+    grid-template-rows: repeat(2, 371px);
     grid-gap: 40px;
 }
 
-.container article {
+.catalog .container article {
     border-radius: 20px;
     padding-bottom: 40px;
 
@@ -47,13 +47,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.container article:nth-child(2n) {
+.catalog .container article:nth-child(2n) {
     background-color: var(--secondary-background);
 }
-.container article:nth-child(2n+1) {
+.catalog .container article:nth-child(2n+1) {
     background-color: rgba(249, 249, 249, 1);
 }
-.container article:nth-child(1) {
+.catalog .container article:nth-child(1) {
     background-color: transparent;
 }
 
