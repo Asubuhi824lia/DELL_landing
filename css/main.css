@@ -122,4 +122,5 @@ main>section {
 .container {
     display: flex;
     justify-content: center;
+    width: 1401px;
 }
