@@ -59,7 +59,7 @@
     flex-direction: column-reverse;
 }
 
-.adventages-cards article img {
+.adventages-card-icon {
     width: 36.11px;
     height: 36.11px;
 }
@@ -69,4 +69,12 @@
     padding: 17px;
     width: fit-content;
     margin-bottom: 25px;
+}
+
+.adventages-card-line {
+    width: 139.5px;
+    height: 90px;
+    position: relative;
+    left: 160.5px;
+    top: 55px;
 }
