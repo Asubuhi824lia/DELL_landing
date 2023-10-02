@@ -29,3 +29,36 @@
     top: 89px;
     left: 260px;
 }
+
+
+
+
+.primary-footer {
+    width: 1401px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sections {
+    display: flex;
+    margin: 0 190px;
+}
+
+.sections section:nth-child(n+2) {
+    margin-left: 180px;
+}
+
+.sections section ul {
+    list-style-type: none;
+}
+
+.sections section ul li:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.footer-sections-header {
+    margin-bottom: 15px;
+}
