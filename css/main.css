@@ -57,12 +57,21 @@
 .primary-btn {
     width: 55px;
     height: 55px;
-    background-color: rgba(51, 169, 255, 1);
+    background-color: var(--primary-btn-color);
     border-radius: 35px;
     border: none;
     color: white;
+    cursor: pointer;
 }
-
+.secondary-btn {
+    width: 31px;
+    height: 31px;
+    background-color: var(--secondary-btn-color);
+    border-radius: 35px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
 
 /* catalog / news */
