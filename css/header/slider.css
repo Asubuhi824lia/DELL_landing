@@ -1,0 +1,68 @@
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(208, 208, 208, 1);
+
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.slider img {
+}
+
+.slider {
+    margin-top: 74px;
+    margin-bottom: 54px;
+    width: calc(557px + 60px);
+    height: 555px;
+    overflow: hidden;
+    padding-right: 60px;
+    z-index: 9;
+    position: relative;
+}
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slider ul {
+    width: 9999px; 
+}
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 700px;
+    height: 555px;
+}
+
+.slider .nav {
+    position: absolute;
+    right: 40px;
+    bottom: calc(169px - 54px - 6px); 
+}
+
+.slider .nav span {
+    background-color: rgba(208, 208, 208, 1);
+    width: 5px;
+    height: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+
+.slider .nav span:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.slider .nav span.on {
+    width: 9px;
+    height: 9px;
+    background: rgba(41, 45, 50, 1);
+}

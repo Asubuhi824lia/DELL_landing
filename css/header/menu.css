@@ -1,0 +1,52 @@
+.logo-header {
+    width: 70px;
+    height: 70px;
+    top: 27px;
+    left: 260px;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 27px;
+    margin-bottom: 26px;
+}
+
+.page_nav {
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.page_nav ul {
+    display: grid;
+    grid-column-gap: 45px;
+    grid-template-columns: repeat(5, auto);
+}
+
+.page_nav li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+
+.site_nav {
+    margin-left: 380px;
+
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(4, auto);
+}
+
+.buys-count {
+    position: relative;
+    left: calc(49px - 16px);
+    bottom: calc(16px + 34px + 4px);
+}

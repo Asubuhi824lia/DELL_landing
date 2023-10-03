@@ -1,9 +1,6 @@
-.logo-header {
-    width: 70px;
-    height: 70px;
-    top: 27px;
-    left: 260px;
-}
+@import url("./header/menu.css");
+@import url("./header/slider.css");
+
 
 .font-header-next {
     font-family: Roboto;
@@ -20,83 +17,19 @@
 }
 
 
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.menu .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 27px;
-    margin-bottom: 26px;
-}
-
-.page_nav {
-    margin-left: 60px;
-    margin-right: 50px;
-}
-
-.page_nav ul {
-    display: grid;
-    grid-column-gap: 45px;
-    grid-template-columns: repeat(5, auto);
-}
-
-.page_nav li {
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-
-.site_nav {
-    margin-left: 380px;
-
-    display: grid;
-    grid-column-gap: 30px;
-    grid-template-columns: repeat(4, auto);
-}
-
-.buys-count {
-    position: relative;
-    left: calc(49px - 16px);
-    bottom: calc(16px + 34px + 4px);
-}
-
-
-
-
-.main-slider {
+.main-screen {
     display: grid;
     grid-template-columns: auto 509px;
     width: 100%;
 }
 
-.slider img {
-    margin-top: 74px;
-    margin-bottom: 54px;
-}
-
-
-.slider {
-    width: 100%;
+.left-side {
     display: flex;
-    flex-direction: column;
+    margin-left: 260px;
 }
 
-
-
-.next-arrow {
-    height: 203px;
-}
-
-.next-arrow a {
-    position: relative;
-    left: 40px;
-    top: 19px;
-    cursor: pointer;
+.next {
+    height: 100%;
 }
 
 .next-header {
@@ -107,37 +40,21 @@
     display: flex;
     flex-direction: column-reverse;
 }
-
 .next-header p {
     margin-left: 40px;
     margin-bottom: 63px;
 }
 
-
-.left-side {
-    display: flex;
-    margin-left: 260px;
+.next-arrow {
+    height: 203px;
+}
+.next-arrow a {
+    position: relative;
+    left: 40px;
+    top: 19px;
+    cursor: pointer;
 }
 
-.main-header {
-    margin-top: 15px;
-    margin-bottom: 60px;
-
-    width: inherit;
-}
-
-.slider img {
-    margin-right: 60px;
-}
-
-.main-text {
-    width: 446px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 158px;
-    margin-left: 105px;
-}
 
 .scroll-to p {
     writing-mode: vertical-lr;
@@ -145,7 +62,6 @@
 
     margin-bottom: 16.5px;
 }
-
 .scroll-to {
     display: flex;
     align-items: center;
@@ -156,33 +72,18 @@
 }
 
 
-.dots {
+.main-header {
+    margin-top: 15px;
+    margin-bottom: 60px;
+
+    width: inherit;
+}
+
+.main-text {
+    width: 446px;
     display: flex;
-    align-items: center;
-    align-self: end;
-    position: relative;
-    bottom: 169px;
-    right: 40px;
-    height: 0;
-}
-
-.dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: rgba(208, 208, 208, 1);
-
-    border: none;
-    cursor: pointer;
-}
-
-.dot:nth-child(n+2) {
-    margin-left: 10px;
-}
-
-.dot-active {
-    width: 9px;
-    height: 9px;
-    border-radius: 10px;
-    background-color: rgba(41, 45, 50, 1);
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 158px;
+    margin-left: 105px;
 }
