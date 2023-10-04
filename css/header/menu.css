@@ -60,6 +60,6 @@
 
 .buys-count {
     position: relative;
-    left: calc(49px - 16px);
-    bottom: calc(16px + 34px + 4px);
+    left: calc(49px - 33px);
+    bottom: calc(16px + 34px + 13px);
 }
