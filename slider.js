@@ -1,12 +1,3 @@
-// $('.dot').on('click', (e) => {
-//     $('.dot-active').removeClass('dot-active')
-//     $(e.target).addClass('dot-active')
-
-//     console.log("slider-dot")
-// })
-
-
-
 $(document).ready(function() {
     $(".slide-show").each(function () { // обрабатываем каждый слайдер
         var obj = $(this);

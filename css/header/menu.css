@@ -1,3 +1,7 @@
+@import url("./dropdown-menu.css");
+
+
+
 .logo-header {
     width: 70px;
     height: 70px;
@@ -39,10 +43,19 @@
 
 .site_nav {
     margin-left: 380px;
+}
 
-    display: grid;
-    grid-column-gap: 30px;
-    grid-template-columns: repeat(4, auto);
+.site_nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.user-name {
+    position: absolute;
+    right: calc(49px + 30px);
+    height: 49px;
+    display: flex;
+    align-items: center;
 }
 
 .buys-count {
