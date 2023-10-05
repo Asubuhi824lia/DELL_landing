@@ -318,12 +318,14 @@
 <footer>
     <div class="container">
         <section class="primary-footer">
-            <img src="./images/logo.png" alt="logo" width="112px" height="112px"/>
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="logo" width="112px" height="112px"/>
+            </div>
             <section class="sections">
-                <section>
+                <section class="section-catalog">
                     <p class="font-footer-sections-header prim-text-color footer-sections-header">Каталог</p>
-                    <nav>
-                        <ul>
+                    <nav class="full-nav">
+                        <ul class="font-footer-sections-list">
                             <li>Ноутбуки</li>
                             <li>Персональные компьютеры</li>
                             <li>Серверы</li>
@@ -331,11 +333,22 @@
                             <li>Запасные части к Dell EMC</li>
                         </ul>
                     </nav>
+                    <nav class="mobile-nav">
+                        <ul class="font-footer-sections-list">
+                            <li>Персональные<br>компьютеры</li>
+                            <li>Запасные части<br>к Dell EMC</li>
+                        </ul>
+                        <ul class="font-footer-sections-list">
+                            <li>Ноутбуки</li>
+                            <li>Серверы</li>
+                            <li>Dell EMC</li>
+                        </ul>
+                    </nav>
                 </section>
                 <section>
                     <p class="font-footer-sections-header prim-text-color footer-sections-header">Личный кабинет</p>
                     <nav>
-                        <ul>
+                        <ul class="font-footer-sections-list">
                             <li>Профиль компьютеры</li>
                             <li>История заказов</li>
                             <li>SMS-уведомления</li>
@@ -347,7 +360,7 @@
                 <section>
                     <p class="font-footer-sections-header prim-text-color footer-sections-header">Помощь</p>
                     <nav class="font-footer-sections-list prim-text-color" >
-                        <ul>
+                        <ul class="font-footer-sections-list">
                             <li>Доставка и оплата</li>
                             <li>Контакты</li>
                             <li>FAQ</li>

@@ -4,7 +4,7 @@
         display: none !important;
     }
     .news-cards article {
-        width: calc(375px - 85px - 15px) !important;
+        width: calc(375px - (25px + 2*15px)) !important;
     }
 
     .news-cards .date {

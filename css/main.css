@@ -9,7 +9,10 @@
 
 
 
-
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+  }
 
 :root {
     --primary-background: rgba(255, 255, 255, 1);

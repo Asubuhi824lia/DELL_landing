@@ -1,18 +1,24 @@
 @import url("./catalog-mobile.css");
 @import url("./advantages-mobile.css");
 @import url("./news-mobile.css");
+@import url("./footer-mobile.css");
 
 
 
 @media (max-width: 375px) {
     
     header, main, footer, main>section, .container, .wrapper,
-    .adventages-cards, .adventages-cards article, 
-    .news-description-textblock {
+    .adventages-cards, .adventages-cards article, .news-description-textblock,
+    .primary-footer, .secondary-footer {
         width: 100% !important;
+    }
+
+    header, main, footer, main>section, .container, .wrapper,
+    .adventages-cards, .adventages-cards article, .news-description-textblock {
         padding: 0 !important;
     }
-    header, footer {
+
+    header {
         display: none !important;
     }
     .content, 
@@ -30,5 +36,4 @@
         display: flex !important;
         justify-content: center !important;
     }
-
 }
