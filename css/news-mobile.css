@@ -11,9 +11,9 @@
         left: calc(100% - 25px) !important;
     }
     .news-cards-description {
-        padding: calc(127px - 45px) 13px 20px 20px !important;
+        padding: calc(127px - 38px) 13px 20px 20px !important;
     }
-    .news-cards-description-header {margin-bottom: 10px;}
+    .news-cards-description-header {margin-bottom: 10px !important; padding-right: 16px !important;}
 
     .news-cards {
         grid-row-gap: 20px !important;

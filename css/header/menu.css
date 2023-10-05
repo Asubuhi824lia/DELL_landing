@@ -8,7 +8,9 @@
     top: 27px;
     left: 260px;
 }
-
+.burger-menu {
+    display: none;
+}
 
 .menu {
     width: 100%;

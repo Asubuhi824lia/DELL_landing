@@ -16,7 +16,7 @@
 <header>
     <section class="menu">
         <div class="container">
-            <img src="./images/logo.png" width="70px" height="70px"/>
+            <img src="./images/logo.png" class="logo-header"/>
             <nav class="page_nav font-header-menu prim-text-color">
                 <ul>
                     <li>Главная</li>
@@ -26,7 +26,7 @@
                     <li>Контакты</li>
                 </ul>
             </nav>
-            <a><img src="./images/header_menu/clarity_shopping-bag-line.png"/></a>
+            <a class="search-container"><img src="./images/header_menu/clarity_shopping-bag-line.png"/></a>
  
 
             <nav class="site_nav">
@@ -46,14 +46,15 @@
                             <li><a href='#'>Выйти</a></li>
                         </ul>
                     </li>
-                    <li><a><img src="./images/header_menu/statistics.png" width="49px" height="49px"/></a></li>
-                    <li><a><img src="./images/header_menu/favorite.png" width="49px" height="49px"/></a></li>
+                    <li id="statistics-icon"><a><img src="./images/header_menu/statistics.png" width="49px" height="49px"/></a></li>
+                    <li id="favorite-icon"><a><img src="./images/header_menu/favorite.png" width="49px" height="49px"/></a></li>
                     <li>
                         <a>
                             <img src="./images/header_menu/buys.png" width="49px" height="49px"/>
                             <img src="./images/header_menu/buys_count.png" width="16px" height="16px" class="buys-count"/>
                         </a>
                     </li>
+                    <li class="burger-menu"><a><img src="./images/header_menu/burger.png"/></a></li>
                 </ul>
             </nav>
         </div>
@@ -75,11 +76,11 @@
             <section class="slider">
                 <section class="slide-show">
                     <ul>
-                        <li><img src="./images/1st screen/slider-1.png" width="557px" height="555px"/></li>
-                        <li><img src="./images/1st screen/slider-1.png" width="557px" height="555px"/></li>
-                        <li><img src="./images/1st screen/slider-1.png" width="557px" height="555px"/></li>
-                        <li><img src="./images/1st screen/slider-1.png" width="557px" height="555px"/></li>
-                        <li><img src="./images/1st screen/slider-1.png" width="557px" height="555px"/></li>
+                        <li><img src="./images/1st screen/slider-1.png" class="main-screen-slide"/></li>
+                        <li><img src="./images/1st screen/slider-1.png" class="main-screen-slide"/></li>
+                        <li><img src="./images/1st screen/slider-1.png" class="main-screen-slide"/></li>
+                        <li><img src="./images/1st screen/slider-1.png" class="main-screen-slide"/></li>
+                        <li><img src="./images/1st screen/slider-1.png" class="main-screen-slide"/></li>
                     </ul>
                 </section>
             </section>
@@ -89,6 +90,7 @@
             <section class="next primary-background">
                 <section class="next-header">
                     <p class="font-header-next">Выгодное<br>предложение<br>от Dell</p>
+                    <img class="next-header-img" src="./images/header_menu/next_img_min.png" width="252px" height="166px"/>
                 </section>
                 <section class="next-arrow">
                     <a><img src="./images/1st screen/arrow.png"/></a>

@@ -12,7 +12,7 @@
     }
 
     .adventages-description article {
-        width: 100%   !important;
+        width:   100% !important;
         padding: 15px !important;
     }
     .adventages-description {
@@ -41,7 +41,7 @@
         width: 121px !important;
         height: 64px !important;
         top: 0px !important;
-        left: 227px !important;
+        left: calc(375px - 121px) !important;
     }
     .adventages-card-icon {
         width:  29px !important;
