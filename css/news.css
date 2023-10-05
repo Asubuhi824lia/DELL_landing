@@ -58,6 +58,7 @@
 
 .news-description-textblock {
     margin-bottom: 70px;
+    width: 721px;
 }
 
 .news-cards {
@@ -74,6 +75,9 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .news-cards .date {

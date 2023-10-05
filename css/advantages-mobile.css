@@ -1,0 +1,60 @@
+@media (max-width: 375px) {
+    .adventages-description-main-img {
+        width: 345px  !important;
+        height: 194px !important;
+        position: absolute;
+        top: -55px;
+        right: -56px !important;
+    }
+
+    .adventages {
+        padding: 101px 0 115px !important;
+    }
+
+    .adventages-description article {
+        width: 100%   !important;
+        padding: 15px !important;
+    }
+    .adventages-description {
+        display: flex;
+        flex-direction: column-reverse;
+        position: static !important;
+        width: 100% !important;
+    }
+    .adventages-description-text {
+        width: 100% !important;
+    }
+
+    .font-secondary-text {
+        font-size: 15px   !important;
+        line-height: 23px !important;
+    }
+    .font-advantages-card-header {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .text-advantages-card {
+        margin-top: 10px;
+    }
+
+    .adventages-card-line {
+        width: 121px !important;
+        height: 64px !important;
+        top: 0px !important;
+        left: 227px !important;
+    }
+    .adventages-card-icon {
+        width:  29px !important;
+        height: 29px !important;
+    }
+    .adventeges-cards-div-icon {
+        padding: 11px !important;
+        position: relative;
+        top: calc(-64px + 15px);
+        margin-bottom: 0 !important;
+    }
+    .adventages-cards article {
+        padding: 15px !important;
+        border-radius: 10px !important;
+    }
+}

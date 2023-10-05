@@ -20,7 +20,7 @@
     background-color: var(--secondary-background);
     width: 100%;
 
-    padding: 87px 0 46px 0;
+    padding: 87px 0 46px !important;
 }
 
 .adventages .container {
@@ -36,9 +36,16 @@
     right: 80px;
 }
 
-.adventages-description img {
-    position: relative;
+.adventages-description-main-img {
+    position: relative; 
+    z-index: 1;
     right: -80px;
+}
+
+.adventages-description article {
+    width: 687px;
+    padding-left:  15px !important;
+    padding-right: 15px !important;
 }
 
 .adventages-description-text {
@@ -67,7 +74,7 @@
     height: 36.11px;
 }
 
-.adventeges-cards-icon {
+.adventeges-cards-div-icon {
     background-color: rgba(52, 58, 65, 1);
     padding: 17px;
     width: fit-content;

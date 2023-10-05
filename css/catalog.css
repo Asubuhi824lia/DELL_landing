@@ -12,8 +12,6 @@
 }
 
 
-
-
 .container-description-text {
     margin-top: 29px;
     margin-bottom: 46px;
@@ -32,23 +30,18 @@
     grid-gap: 40px;
 }
 
-.catalog .container article {
+.catalog article {
     border-radius: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.catalog .container article:nth-child(2n) {
-    background-color: var(--secondary-background);
-}
-.catalog .container article:nth-child(2n+1) {
-    background-color: rgba(249, 249, 249, 1);
-}
-.catalog .container article:nth-child(1) {
-    background-color: transparent;
-}
+.catalog article:nth-child(2n)   {background-color: var(--secondary-background);}
+.catalog article:nth-child(2n+1) {background-color: rgba(249, 249, 249, 1);}
+.catalog article:nth-child(1)    {background-color: transparent;}
+
 
 .card-number {
     position: relative;
@@ -60,9 +53,8 @@
     position: inherit;
     bottom: 40px;
 }
-.preview p {
-    margin: 0 40px;
-}
+.preview p {margin: 0 40px;}
+
 .btn {
     display: flex;
     flex-direction: row;
