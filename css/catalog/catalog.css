@@ -1,0 +1,62 @@
+.font-catalog-card-header {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+}
+.font-catalog-card-numbers {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 38px;
+}
+
+
+.catalog {
+    padding-top: 164px;
+    padding-bottom: 180px;
+}
+.catalog__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 371px);
+    grid-gap: 40px;
+    width: 1401px;
+}
+
+.catalog__description-text {
+    margin-top: 29px;
+    margin-bottom: 46px;
+}
+
+.catalog__card {
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 371px;
+}
+.catalog__card:nth-child(2n)   {background-color: var(--secondary-background);}
+.catalog__card:nth-child(2n+1) {background-color: rgba(249, 249, 249, 1);}
+.catalog__info {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.catalog__card-number {
+    position: relative;
+    height: 0;
+    top: 40px;
+    left: 40px;
+    text-align: start;
+}
+
+.catalog__card-preview-header {text-align: center;}
+.catalog__card-preview-header:nth-child(3n + 2) {text-align: right;}
+
+.catalog__card-preview-description {
+    margin: 0 40px 40px 40px;
+}

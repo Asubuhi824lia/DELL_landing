@@ -55,8 +55,9 @@
 }
 
 .adventages-cards {
+    width: -webkit-fill-available;
     display: grid;
-    grid-template-columns: repeat(4, 330px);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 27px;
     grid-template-rows: 289px;
 }

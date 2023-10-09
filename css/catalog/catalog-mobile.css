@@ -1,0 +1,70 @@
+@media (max-width: 375px) {
+
+    .font-catalog-card-header {
+        font-size:   20px !important;
+        line-height: 30px !important;
+    }
+    .font-preheader {
+        font-size:   15px !important;
+        line-height: 20px !important;
+    }
+    .font-header-secondary {
+        font-size: 30px   !important;
+        line-height: 35px !important;
+    }
+    .font-primary-text {
+        font-size: 15px   !important;
+        line-height: 23px !important;
+    }
+    .font-primary-btn-text {
+        font-size: 15px   !important;
+    }
+
+
+    .catalog {
+        padding-top:    120px !important;
+        padding-bottom: 120px !important;
+    }
+
+    .catalog__container {
+        grid-template-columns: calc(375px - 2*15px) !important;
+        grid-template-rows: repeat(6, auto) !important;
+        grid-gap: 20px !important;
+    }
+
+    .catalog__description-text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .catalog__card {
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    }
+    .catalog__card:not(:nth-child(2)) {
+        padding-bottom: 0;
+        justify-content: flex-start !important;
+        height: 290.9px !important;
+    } 
+    .catalog__card:nth-child(2) {height: 275px !important;}
+
+    .catalog__card:nth-child(2) img {margin: 15px 1px 14px 0   !important; width: 302px    !important; height: 178px !important;}
+    .catalog__card:nth-child(3) img {margin: 11px 0 15px 63px  !important; width: 210px    !important; height: 193px !important;}
+    .catalog__card:nth-child(4) img {margin: 63.5px 1px 50px 0 !important; width: 264.24px !important; height: 107.42px !important;}
+    .catalog__card:nth-child(5) img {margin: 46px 1px 51px 0   !important; width: 226.6px  !important; height: 124.67px !important;}
+    .catalog__card:nth-child(6) img {margin: 30px 0 23px 45px  !important; width: 253.26px !important; height: 167.01px !important;}
+    
+    .catalog__card-number {
+        left: 20px !important;
+        top:  20px !important;
+    }
+    
+    .catalog__card-preview-header {
+        height: 178px !important;
+    }
+    .catalog__card-preview-description {
+        margin: 20px !important;
+    }
+}

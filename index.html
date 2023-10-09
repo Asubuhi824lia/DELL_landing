@@ -68,8 +68,8 @@
             <section class="main-text">
                 <p class="font-preheader third-text-color">Новое поступление</p>
                 <p class="font-header-primary prim-text-color main-header">Лучшие товары<br>от компании Dell</p>
-                <div class="btn">
-                    <button class="primary-btn" style="margin-right: 12px;">→</button> 
+                <div class="primary-btn-container_position_left">
+                    <button class="primary-btn">→</button> 
                     <span class="font-primary-btn-text prim-text-color">Подробнее</span>
                 </div>
             </section>
@@ -101,73 +101,65 @@
 </header>
 <main>
     <section class="catalog">
-        <div class="container">
-            <div class="content">
-                <article class="height: fit-content;">
-                    <p class="font-header-secondary prim-text-color">Каталог&nbsp;товаров от Dell</p>
-                    <p class="font-primary-text container-description-text third-text-color">Наша компания является<br>зарегистрированным и официальным<br>партнером Dell в России.</p>
-                    <div class="btn">
-                        <button class="primary-btn" style="margin-right: 12px;">→</button> 
-                        <span class="font-primary-btn-text prim-text-color">В каталог</span>
-                    </div>
-                </article>
-                <article>
-                    <p class="font-catalog-card-numbers prim-text-color card-number">01</p>
-                    <section class="preview">
-                        <section style="text-align: center;">
-                            <img src="./images/2st-catalog/1.png" style="margin-bottom: 29px;
-                                top: -10px;
-                                position: relative;
-                            "/>
-                        </section>
-                        <p class="font-preheader third-text-color">105 товаров</p>
-                        <p class="font-catalog-card-header prim-text-color">Ноутбуки</p>
-                    </section>
-                </article>
-                <article>
-                    <p class="font-catalog-card-numbers prim-text-color card-number">02</p>
-                    <section class="preview">
-                        <section style="text-align: right;">
-                            <img src="./images/2st-catalog/2.png" style="margin: 0 58px 0 0;
-                                top: -21px;
-                                position: relative;
-                            "/>
-                        </section>
-                        <p class="font-preheader third-text-color">65 товаров</p>
-                        <p class="font-catalog-card-header prim-text-color">Персональные компьютеры</p>
-                    </section>
-                </article>
-                <article>
-                    <p class="font-catalog-card-numbers prim-text-color card-number">03</p>
-                    <section class="preview">
-                        <section style="text-align: center;">
-                            <img src="./images/2st-catalog/3.png" style="margin-bottom: 46px;"/>
-                        </section>
-                        <p class="font-preheader third-text-color">13 товаров</p>
-                        <p class="font-catalog-card-header prim-text-color">Cерверы</p>
-                    </section>
-                </article>
-                <article>
-                    <p class="font-catalog-card-numbers prim-text-color card-number">04</p>
-                    <section class="preview">
-                        <section style="text-align: center;">
-                            <img src="./images/2st-catalog/4.png" style="margin-bottom: 46px;"/>
-                        </section>
-                        <p class="font-preheader third-text-color">2345 товаров</p>
-                        <p class="font-catalog-card-header prim-text-color">Dell EMC</p>
-                    </section>
-                </article>
-                <article>
-                    <p class="font-catalog-card-numbers prim-text-color card-number">05</p>
-                    <section class="preview">
-                        <section style="text-align: right;">
-                            <img src="./images/2st-catalog/5.png" style="margin: 0 30px 13px 0;"/>
-                        </section>
-                        <p class="font-preheader third-text-color">195 товаров</p>
-                        <p class="font-catalog-card-header prim-text-color">Запасные части к Dell EMC</p>
-                    </section>
-                </article>
-            </div>
+        <div class="catalog__container">
+            <article class="catalog__info">
+                <p class="font-header-secondary prim-text-color">Каталог&nbsp;товаров от Dell</p>
+                <p class="font-primary-text catalog__description-text third-text-color">Наша компания является<br>зарегистрированным и официальным<br>партнером Dell в России.</p>
+                <div class="primary-btn-container_position_left">
+                    <button class="primary-btn">→</button> 
+                    <span class="font-primary-btn-text prim-text-color">В каталог</span>
+                </div>
+            </article>
+            <article class="catalog__card">
+                <section class="catalog__card-preview-header">
+                    <p class="catalog__card-number font-catalog-card-numbers prim-text-color">01</p>
+                    <img src="./images/2st-catalog/1.png" style="margin: -10px 1px 29px 0;"/>
+                </section>
+                <section class="catalog__card-preview-description">
+                    <p class="catalog__card-preview-p font-preheader third-text-color">105 товаров</p>
+                    <p class="catalog__card-preview-p font-catalog-card-header prim-text-color">Ноутбуки</p>
+                </section>
+            </article>
+            <article class="catalog__card">
+                <section class="catalog__card-preview-header">
+                    <p class="catalog__card-number font-catalog-card-numbers prim-text-color">02</p>
+                    <img src="./images/2st-catalog/2.png" style="margin: -21px 0 41px 57px;"/>
+                </section>
+                <section class="catalog__card-preview-description">
+                    <p class="catalog__card-preview-p font-preheader third-text-color">65 товаров</p>
+                    <p class="catalog__card-preview-p font-catalog-card-header prim-text-color">Персональные компьютеры</p>
+                </section>
+            </article>
+            <article class="catalog__card">
+                <section class="catalog__card-preview-header">
+                    <p class="catalog__card-number font-catalog-card-numbers prim-text-color">03</p>
+                    <img src="./images/2st-catalog/3.png" style="margin: 81px 1px 50px 0;"/>
+                </section>
+                <section class="catalog__card-preview-description">
+                    <p class="catalog__card-preview-p font-preheader third-text-color">13 товаров</p>
+                    <p class="catalog__card-preview-p font-catalog-card-header prim-text-color">Cерверы</p>
+                </section>
+            </article>
+            <article class="catalog__card">
+                <section class="catalog__card-preview-header">
+                    <p class="catalog__card-number font-catalog-card-numbers prim-text-color">04</p>
+                    <img src="./images/2st-catalog/4.png" style="margin: 59px 1px 51px 0;"/>
+                </section>
+                <section class="catalog__card-preview-description">
+                    <p class="catalog__card-preview-p font-preheader third-text-color">2345 товаров</p>
+                    <p class="catalog__card-preview-p font-catalog-card-header prim-text-color">Dell EMC</p>
+                </section>
+            </article>
+            <article class="catalog__card">
+                <section class="catalog__card-preview-header">
+                    <p class="catalog__card-number font-catalog-card-numbers prim-text-color">05</p>
+                    <img src="./images/2st-catalog/5.png" style="margin: 38px 0 23px 57px;"/>
+                </section>
+                <section class="catalog__card-preview-description">
+                    <p class="catalog__card-preview-p font-preheader third-text-color">195 товаров</p>
+                    <p class="catalog__card-preview-p font-catalog-card-header prim-text-color">Запасные части к Dell EMC</p>
+                </section>
+            </article>
         </div>
     </section>
     <section class="adventages">
@@ -177,8 +169,8 @@
                 <article>
                     <p class="font-header-secondary prim-text-color">Наши преимущества</p>
                     <p class="font-secondary-text third-text-color adventages-description-text">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
-                    <div class="btn">
-                        <button class="primary-btn" style="margin-right: 12px;">→</button> 
+                    <div class="primary-btn-container_position_left">
+                        <button class="primary-btn">→</button> 
                         <span class="font-primary-btn-text prim-text-color">Оставить заявку</span>
                     </div>
                 </article>
@@ -227,9 +219,9 @@
                     <p class="font-primary-text container-description-text third-text-color">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
                 </article>
                 <section class="btn-container">
-                    <div class="btn">
+                    <div class="primary-btn-container_position_right">
                         <span class="font-primary-btn-text prim-text-color">Все новости</span>
-                        <button class="primary-btn" style="margin-left: 17px;">→</button> 
+                        <button class="primary-btn">→</button> 
                     </div>
                 </section>
             </section>
@@ -238,7 +230,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>
@@ -251,7 +243,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>
@@ -264,7 +256,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>
@@ -277,7 +269,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>
@@ -290,7 +282,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>
@@ -303,7 +295,7 @@
                     <section class="news-cards-description">
                         <div class="news-cards-description-header">
                             <p class="font-news-card-header prim-text-color">GE использует<br>технологии Dell</p>
-                            <button class="secondary-btn">→</button> 
+                            <button class="news-btn">→</button> 
                         </div>
                         <p class="font-news-card-text prim-text-color" style="margin-top: 11pz;">Вы можете посмотреть ещё больше интересных </p>
                     </section>

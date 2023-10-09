@@ -1,25 +1,23 @@
 @import url("./main-mobile.css");
 
 @import url("./header.css");
-@import url("./catalog.css");
+@import url("./catalog/catalog.css");
 @import url("./advantages.css");
 @import url("./news.css");
 @import url("./contact-form.css");
 @import url("./footer.css");
 
 
-
-/*Убрать полосу прокрутки для всей страницы*/
 ::-webkit-scrollbar {
     width: 0;
-  }
+}
 
 :root {
     --primary-background: rgba(255, 255, 255, 1);
     --secondary-background: rgba(242, 242, 242, 1);
 
     --primary-btn-color: rgba(51, 169, 255, 1);
-    --secondary-btn-color: rgba(41, 45, 50, 1);
+    --news-btn-color: rgba(41, 45, 50, 1);
 
     --prim-text-color: rgba(41, 45, 50, 1);
     --sec-text-color: rgba(255, 255, 255, 1);
@@ -67,20 +65,33 @@
 .adventages-card-background { background-color: var(--prim-text-color); }
 
 
-
+.primary-btn-container_position_left { /* кнопка слева */
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    grid-column-gap: 12px;
+}
+.primary-btn-container_position_right { /* кнопка справа */
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    grid-column-gap: 17px;
+}
 .primary-btn {
-    width: 55px;
-    height: 55px;
+    width:  clamp(45px, 12vw, 55px);
+    height: clamp(45px, 12vw, 55px);
     background-color: var(--primary-btn-color);
     border-radius: 35px;
     border: none;
     color: white;
-    cursor: pointer;
 }
-.secondary-btn {
+
+.news-btn {
     width: 31px;
     height: 31px;
-    background-color: var(--secondary-btn-color);
+    background-color: var(--news-btn-color);
     border-radius: 35px;
     border: none;
     color: white;
