@@ -2,7 +2,7 @@
 
 @import url("./header.css");
 @import url("./catalog/catalog.css");
-@import url("./advantages.css");
+@import url("./advantages/advantages.css");
 @import url("./news.css");
 @import url("./contact-form.css");
 @import url("./footer.css");
@@ -60,9 +60,6 @@
 .prim-text-color { color: var(--prim-text-color); }
 .sec-text-color { color: var(--sec-text-color); }
 .third-text-color { color: var(--third-text-color); }
-
-
-.adventages-card-background { background-color: var(--prim-text-color); }
 
 
 .primary-btn-container_position_left { /* кнопка слева */
@@ -145,7 +142,5 @@ main>section {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
     width: 1401px;
 }

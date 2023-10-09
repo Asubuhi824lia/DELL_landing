@@ -1,16 +1,17 @@
-.font-advantages-card-header {
+.adventages__card_font {
     font-family: Euclid Circular A;
     font-size: 22px;
     font-weight: 700;
     line-height: 27.9px;
 }
-.text-advantages-card {
+.adventages__card_text {
     font-family: Euclid Circular A;
     font-size: 16px;
     font-weight: 300;
     line-height: 20.29px;
     color: rgba(183, 183, 183, 1);
 }
+.adventages__card_background { background-color: var(--prim-text-color); }
 
 
 .adventages {
@@ -22,47 +23,44 @@
 
     padding: 87px 0 46px !important;
 }
-
-.adventages .container {
+.adventages__container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.adventages-description {
+.adventages__header {
     display: flex;
     align-items: center;
     position: relative;
     right: 80px;
 }
-
-.adventages-description-main-img {
+.adventages__header-img {
     position: relative; 
     z-index: 1;
     right: -80px;
 }
 
-.adventages-description article {
-    width: 687px;
-    padding-left:  15px !important;
-    padding-right: 15px !important;
+.adventages__description {
+    padding-left:  15px;
+    padding-right: 15px;
 }
-
-.adventages-description-text {
+.adventages__description-text {
     margin-top: 37px;
     margin-bottom: 41px;
     width: 518px;
 }
 
-.adventages-cards {
+
+.adventages__cards {
     width: -webkit-fill-available;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 27px;
     grid-template-rows: 289px;
+    padding: 0 15px;
 }
-
-.adventages-cards article {
+.adventages__cards-content  {
     border-radius: 20px;
     padding: 30px 20px 35px 30px;
 
@@ -70,22 +68,21 @@
     flex-direction: column-reverse;
 }
 
-.adventages-card-icon {
+.adventages__card-icon_size {
     width: 36.11px;
     height: 36.11px;
 }
-
-.adventeges-cards-div-icon {
+.adventeges__card-div-icon {
     background-color: rgba(52, 58, 65, 1);
     padding: 17px;
     width: fit-content;
     margin-bottom: 25px;
 }
 
-.adventages-card-line {
+.adventages__card-line {
     width: 139.5px;
     height: 90px;
     position: relative;
-    left: 160.5px;
+    left: 153px;
     top: 55px;
 }
