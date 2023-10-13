@@ -1,0 +1,32 @@
+.contacts-footer__info-header_font {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.contacts-footer__info-data_font {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
+.contacts-footer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 153px;
+    margin: 35px 0 40px 0;
+}
+
+.contacts-footer__social-links {
+    display: grid;
+    grid-column-gap: 18.3px;
+    grid-template-columns: repeat(2, auto);
+}
+
+.contacts-footer__info {
+    display: grid;
+    grid-row-gap: 11px;
+    grid-template-rows: repeat(2, auto);
+}

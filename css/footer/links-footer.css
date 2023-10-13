@@ -1,0 +1,49 @@
+.primary-footer__links-header_font {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.links-footer__links-list_font {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+
+.logo-footer {
+    width: 112px;
+    height: 112px;
+    top: 89px;
+    left: 260px;
+}
+
+
+
+.links-footer {
+    margin-top: 60px;
+    margin-bottom: 100px;    
+    display: flex;
+    justify-content: flex-start;
+}
+
+.links-sections {
+    display: flex;
+    margin: 0 190px;
+}
+
+.links-sections section:nth-child(n+2) {
+    margin-left: 180px;
+}
+
+.links-sections section ul {
+    list-style-type: none;
+}
+
+.links-sections section ul li:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+
+.mobile-nav {display: none;}
