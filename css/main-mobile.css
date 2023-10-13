@@ -1,4 +1,6 @@
-@import url("./header-mobile.css");
+@import url("./header/first-screen/first-screen-mobile.css");
+@import url("./header/upper-menu/menu-mobile.css");
+
 @import url("./catalog/catalog-mobile.css");
 @import url("./advantages/advantages-mobile.css");
 @import url("./news/news-mobile.css");

@@ -1,5 +1,3 @@
-@import url("./header/menu-mobile.css");
-
 @media (width < 375px) {
     .scroll-to {
         display: none !important;
