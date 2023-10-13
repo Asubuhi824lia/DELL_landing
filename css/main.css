@@ -3,9 +3,9 @@
 @import url("./header.css");
 @import url("./catalog/catalog.css");
 @import url("./advantages/advantages.css");
-@import url("./news.css");
+@import url("./news/news.css");
 @import url("./contact-form.css");
-@import url("./footer.css");
+@import url("./footer/footer.css");
 
 
 ::-webkit-scrollbar {

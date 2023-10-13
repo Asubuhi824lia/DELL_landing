@@ -8,19 +8,19 @@
 @media (max-width: 375px) {
     
     header, main, footer, main>section, .container, .wrapper,
-    .adventages__cards, .adventages__cards-content, .news-description-textblock,
+    .adventages__cards, .adventages__cards-content, .news__description-textblock,
     .primary-footer, .secondary-footer {
         width: 100% !important;
     }
 
     header, main, footer, main>section, .container, .wrapper,
-    .news-description-textblock {
+    .news__description-textblock {
         padding: 0 !important;
     }
 
     .content, 
     .adventages__cards,
-    .news-description, .news-cards {
+    .news-description, .news__cards {
         display: grid !important;
         grid-template-columns: 100% !important;
         grid-template-rows: auto !important;

@@ -58,7 +58,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 27px;
     grid-template-rows: 289px;
-    padding: 0 15px;
 }
 .adventages__cards-content  {
     border-radius: 20px;

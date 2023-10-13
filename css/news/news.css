@@ -1,16 +1,16 @@
-.font-news-card-header {
+.news__card-header_font { 
     font-family: Roboto;
     font-size: 25px;
     font-weight: 700;
     line-height: 32px;
 }
-.font-news-card-text {
+.news__card-text_font {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
-.font-news-card-date-num {
+.news__card-date-num_font {
     /* font-family: Roboto;
     font-size: 20px;
     font-weight: 900;
@@ -26,7 +26,7 @@
     text-align: center;
 
 }
-.font-news-card-date-month {
+.news__card-date-month_font {
     font-family: Roboto;
     font-size: 10px;
     font-weight: 300;
@@ -47,21 +47,21 @@
     flex-direction: column;
 }
 
-.news-description {
+.news__description {
     display: flex;
     justify-content: space-between;
 }
 
-.news-description-text {
+.news__description-text {
     margin-top: 25px;
 }
 
-.news-description-textblock {
+.news__description-textblock {
     margin-bottom: 70px;
     width: 721px;
 }
 
-.news-cards {
+.news__cards {
     display: grid;
     grid-template-columns: repeat(3, 415px);
     grid-template-rows: repeat(2, 364px);
@@ -69,7 +69,7 @@
     grid-row-gap: 40px;
 }
 
-.news-cards article {
+.news__card {
     box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.05);
 
     display: flex;
@@ -80,7 +80,7 @@
     background-repeat: no-repeat;
 }
 
-.news-cards .date {
+.news__card-date {
     width: 50px;
     /* height: 97px; */
     border-radius: 15px;
@@ -94,12 +94,10 @@
     top: 64px;
     left: 390px;
 }
-
-.news-cards-description {
+.news__card-description_paddings {
     padding: 24px 31px 26px 30px;
 }
-
-.news-cards-description-header {
+.news__card-description-header {
     display: flex;
     justify-content: space-between;
     padding-right: 12px;

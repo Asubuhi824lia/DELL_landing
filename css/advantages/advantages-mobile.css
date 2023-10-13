@@ -12,6 +12,10 @@
         padding: 101px 0 115px !important;
     }
 
+    .adventages__cards {
+        padding: 0 15px !important;
+    }
+
     .adventages__header {
         display: flex;
         flex-direction: column-reverse;
