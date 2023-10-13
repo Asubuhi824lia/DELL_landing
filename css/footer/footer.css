@@ -1,11 +1,6 @@
-@import url("./links-footer.css");
-@import url("./contacts-footer.css");
+@import url("./links-footer/footer.css");
+@import url("./contacts-footer/footer.css");
 
-
-
-.links-footer, .contacts-footer{
-    width: 1401px;
-}
 
 hr {
     border: none; 

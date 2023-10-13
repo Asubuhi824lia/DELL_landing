@@ -1,4 +1,4 @@
-.primary-footer__links-header_font {
+.links-footer__links-header_font {
     font-family: Roboto;
     font-size: 25px;
     font-weight: 400;
@@ -12,38 +12,28 @@
 }
 
 
-.logo-footer {
-    width: 112px;
-    height: 112px;
-    top: 89px;
-    left: 260px;
-}
-
-
-
 .links-footer {
+    width: 1401px;
     margin-top: 60px;
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
     display: flex;
     justify-content: flex-start;
 }
 
-.links-sections {
+
+.links-footer__links-sections {
     display: flex;
     margin: 0 190px;
 }
-
-.links-sections section:nth-child(n+2) {
+.links-footer__links-sections section:nth-child(n+2) {
     margin-left: 180px;
 }
-
-.links-sections section ul {
+.links-footer__links-sections section ul {
     list-style-type: none;
 }
-
-.links-sections section ul li:nth-child(n+2) {
+.links-footer__links-sections section ul li:nth-child(n+2) {
     margin-top: 10px;
 }
 
-
-.mobile-nav {display: none;}
+.links-footer__full-nav_display   {display: inherit;}
+.links-footer__mobile-nav_display {display: none;}

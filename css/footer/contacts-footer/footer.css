@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-column-gap: 153px;
+    width: 1401px;
     margin: 35px 0 40px 0;
 }
 
