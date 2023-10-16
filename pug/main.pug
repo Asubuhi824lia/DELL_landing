@@ -1,6 +1,19 @@
 extends base
+
+
 block metaVars
     - var siteTitle = "DELL";
 
-block landing
+
+append header
     include header/header_menu
+block main
+    block catalog
+        p Catalog
+    block adventages
+        p Adventages
+    block news
+        p News
+prepend footer
+    include footer/links-footer/links-footer
+    hr.container

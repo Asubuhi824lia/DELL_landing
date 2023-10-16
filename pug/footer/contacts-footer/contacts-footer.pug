@@ -1,0 +1,20 @@
+-
+    const contacts = [
+        {title: "Адрес",    data: "Москва, ул. 3-я Хорошевская, дом 2, строение 1"},
+        {title: "Телефон",  data: "+7 495 737-06-01, +7 495 737-06-01"},
+        {title: "E-mail",   data: "dell_ru@gmail.com"},
+    ]
+    const path_main = "../../images/"
+    const soc_links = [path_main+"facebook.png", path_main+"whatsapp.png"]
+
+
+.container
+    section.contacts-footer
+        each contact in contacts
+            section.contacts-footer__info
+                p.contacts-footer__info-header_font.third-text-color #{contact.title}
+                p.contacts-footer__info-data_font.prim-text-color #{contact.data}
+        section.contacts-footer__social-links
+            each soc_link in soc_links
+                a
+                    img(src=soc_link)

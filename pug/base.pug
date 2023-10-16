@@ -1,6 +1,11 @@
+mixin icon(src, icon_size)
+    //- attributes == {class: "..."}
+    img(src=src, width=icon_size, height=icon_size, class!=attributes.class)
+
+
 block metaVars
-    - var lang    = "en";
-    - var charset = "UTF-8";
+    - var lang      = "en";
+    - var charset   = "UTF-8";
     - var siteTitle = "Document";
 
 
@@ -8,8 +13,19 @@ doctype html
 html(lang=lang)
     head
         meta(charset=charset)
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport", 
+            content="width=device-width, initial-scale=1.0")
         title #{siteTitle}
         link(rel="stylesheet", type="text/css", href="../../css/main.css")
     body
-        block landing
+        .wrapper
+            header.header
+                section.menu
+                    .container
+                        block header
+                            img.logo-header(src="../../images/logo.png")
+            main
+                block main
+            footer
+                block footer
+                    include footer/contacts-footer/contacts-footer
