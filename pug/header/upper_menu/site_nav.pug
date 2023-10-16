@@ -1,0 +1,35 @@
+//- Часть верхнего меню, навигация по сайту
+
+mixin icon(src, icon_size)
+    img(src=src, width=icon_size, height=icon_size)
+
+-
+    var userName = "Мария"
+    var icon_size = "49px"
+    var li_height = "height: "+icon_size;
+    var submenuItems = ["Личный кабинет", "История заказов", "Персональные предложения", "Выйти"]
+
+nav.site_nav 
+    ul.topmenu
+        li(style=li_height).down
+            a(href="")
+                span.user-name #{userName}
+                +icon("../../images/header_menu/personal.png", icon_size)
+            ul.submenu
+                li
+                    a(href="").submenu-personal
+                        span(style="margin-right: 20px;") #{userName}
+                        +icon("../../images/header_menu/personal.png", icon_size)
+                each item in submenuItems
+                    li 
+                        a(href="") #{item}
+        li(style=li_height)#statistics-icon
+            a(href="")
+                +icon("../../images/header_menu/statistics.png", icon_size)
+        li(style=li_height)#favorite-icon
+            a(href="")
+                +icon("../../images/header_menu/favorite.png", icon_size)
+        li(style=li_height)
+            a(href="")
+                +icon("../../images/header_menu/buys.png", icon_size)
+                img(src="../../images/header_menu/buys_count.png", height="16px", width="16px").buys-count

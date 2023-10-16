@@ -22,6 +22,9 @@
         cursor: pointer;
     }
     .topmenu > li:nth-child(n + 2) {margin-left: 15px !important;}
+    .topmenu li:last-child {
+        display: flex;
+    }   
 
     .search-container {
         width: -webkit-fill-available;
@@ -29,7 +32,4 @@
         display: flex;
         margin-right: 30px;
     }
-    .topmenu li:last-child {
-        display: flex;
-    }   
 }

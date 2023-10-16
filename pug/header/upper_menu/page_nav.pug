@@ -1,0 +1,14 @@
+- 
+    var menuItems = [
+        {title: "Главная", link: "#"}, 
+        {title: "Каталог", link: "#"}, 
+        {title: "Новости", link: "#"},
+        {title: "Наш\u00A0АСЦ", link: "#"}, 
+        {title: "Контакты", link: "#"}
+    ];
+
+nav.page_nav.font-header-menu.prim-text-color
+    ul 
+        each item in menuItems
+            li 
+                a(href=item.link)= item.title

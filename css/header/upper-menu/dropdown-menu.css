@@ -16,15 +16,6 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.topmenu > li {
-    display: inline-block;
-    position: relative;
-    height: 79px;
-}
-.topmenu > li > a {
-    position: relative;
-    bottom: 0px;
-}
 .topmenu > .down > a:before {
     content: "";
     position: absolute;
