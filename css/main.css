@@ -80,6 +80,7 @@
     grid-column-gap: 17px;
 }
 .primary-btn {
+    cursor: pointer;
     width:  clamp(45px, 12vw, 55px);
     height: clamp(45px, 12vw, 55px);
     background-color: var(--primary-btn-color);
@@ -89,13 +90,13 @@
 }
 
 .news-btn {
+    cursor: pointer;
     width: 31px;
     height: 31px;
     background-color: var(--news-btn-color);
     border-radius: 35px;
     border: none;
     color: white;
-    cursor: pointer;
 }
 
 

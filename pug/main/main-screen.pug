@@ -1,0 +1,43 @@
+include ../mixin
+
+
+- let folder_1st = "../../images/1st screen/"
+- let i = 0
+
+
+block main-screen
+    section.main-screen.secondary-background
+        section.left-side
+            section.scroll-to
+                p.links-footer__links-list_font.third-text-colo.
+                    Scroll to catalog
+                +icon(folder_1st+'mouse.png', '25px', 'auto')
+            section.main-text
+                p.font-preheader.third-text-color Новое поступление
+                p(class=["font-header-primary", "prim-text-color", "main-header"])
+                    | Лучшие товары
+                    br
+                    | от компании Dell
+                .primary-btn-container_position_left
+                    button.primary-btn= '→'
+                    span.font-primary-btn-text.prim-text-color Подробнее
+            section.slider
+                section.slide-show
+                    ul
+                        while i < 5
+                            li
+                                img.main-screen-slide(img src=folder_1st+"slider-1.png")
+                            - i++
+        section.right-side
+            section.next.primary-background
+                section.next-header
+                    p.font-header-next
+                        | Выгодное
+                        br
+                        | предложение
+                        br
+                        | от Dell
+                    +icon(folder_1st+"next_img_min.png", "252px", "166px")(class="next-header-img") 
+                section.next-arrow
+                    a
+                        img(src=folder_1st+"arrow.png")

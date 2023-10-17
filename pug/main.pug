@@ -8,6 +8,9 @@ block metaVars
 append header
     include header/header_menu
 block main
+    header.header
+        block main-screen
+            include main/main-screen
     section.catalog
         block catalog
             include main/catalog
