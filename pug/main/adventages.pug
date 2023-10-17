@@ -1,0 +1,51 @@
+include ../mixin
+
+
+-
+    const folder_adv = "../../images/3st-advantages/"
+    const line = folder_adv+"Vector_card.png"
+    const cards = [
+        {
+            text: "В наличии широкий ассортимент,<br>а также доступные цены<br>на ноутбуки Dell",
+            header: "Самые выгодные<br>и низкие цены",
+            icon: "Иконка_1.png",
+        },
+        {
+            text: "Сертифицированный сервисный<br>центр по ремонту техники Dell<br>в России и странах СНГ",
+            header: "Авторизованный<br>сервисный центр DELL",
+            icon: "Иконка_2.png",
+        },
+        {
+            text: "Мы прошли аттестацию в виде<br>тестирования, где показали<br>высокий уровень знаний",
+            header: "Высокий уровень<br>технической экспертизы",
+            icon: "Иконка_3.png",
+        },
+        {
+            text: "Официальный поставщик<br>продукции DELL в России<br>и странах СНГ",
+            header: "Официальный партнер<br>DELL",
+            icon: "Иконка_4.png",
+        }
+    ]
+
+
+block adventages
+    div.container.adventages__container
+        section.adventages__header
+            img(src=folder_adv+"main.png").adventages__header-img
+            article.adventages__description
+                p.font-header-secondary.prim-text-color.
+                    Наши преимущества
+                p(class=["adventages__description-text", "font-secondary-text", "third-text-color"]).
+                    Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами
+                .primary-btn-container_position_left
+                    button.primary-btn= '→'
+                    span.font-primary-btn-text.prim-text-color.
+                        Оставить заявку
+        section.adventages__cards
+            each card in cards
+                article(class="adventages__cards-content adventages__card_background")
+                    p.adventages__card_text !{card.text}
+                    p.adventages__card_font.sec-text-color !{card.header}
+                    .adventeges__card-div-icon
+                        img(src=folder_adv+card.icon).adventages__card-icon_size
+                    img(src=line).adventages__card-line

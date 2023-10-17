@@ -1,5 +1,5 @@
 -
-    const folder = "../../images/2st-catalog/"
+    const folder_cat = "../../images/2st-catalog/"
     const catalog = [
         {
             header: {p: "01", img: "1.png", margin: "-10px 1px 29px 0;"},
@@ -50,7 +50,7 @@ block catalog
                 section.catalog__card-preview-header
                     p(class= classes.header).
                         #{card.header.p}
-                    img(src=folder+card.header.img, style='margin: '+card.header.margin)
+                    img(src=folder_cat+card.header.img, style='margin: '+card.header.margin)
                 section.catalog__card-preview-description
                     p(class= classes.description.preheader)=card.description.preheader
                     p(class= classes.description.header)=   card.description.header
