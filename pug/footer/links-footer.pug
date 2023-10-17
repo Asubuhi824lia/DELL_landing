@@ -1,0 +1,42 @@
+include ../mixin
+
+-
+    const links_blocks = [
+        {title: "Каталог", navs: [
+            {
+                class: "links-footer__full-nav_display",
+                uls: [["Ноутбуки", "Персональные компьютеры", "Серверы", "Dell EMC", "Запасные части к Dell EMC"]]
+            },
+            {
+                class: "links-footer__mobile-nav_display",
+                uls: [
+                    ["Персональные\u00A0компьютеры", "Запасные части\u00A0к Dell EMC"],
+                    ["Ноутбуки", "Серверы", "Dell EMC"]
+                ]
+            },
+        ]}
+        //- {title: "Личный кабинет", navs: [
+        //-     class: "",
+        //-     uls: [["Профиль компьютеры", "История заказов", "SMS-уведомления", "Избранное", "Сравнение товаров"]]
+        //- ]},
+        //- {title: "Помощь", navs: [
+        //-     class: "",
+        //-     uls: [["Доставка и оплата", "Контакты", "FAQ", "Наш АСЦ"]]
+        //- ]}
+    ];
+
+
+.container
+    section.links-footer
+        section.links-footer__logo
+            +icon("../../images/logo.png", "112px")
+        article.links-footer__links-sections
+            each block in links_blocks
+                section.links-footer__section-catalog
+                    p(style="margin-bottom: 15px;" class=['links-footer__links-header_font', 'prim-text-color'])= block.title
+                    each nav in block.navs
+                        nav(class=nav.class)
+                            each ul in nav.uls
+                                ul.links-footer__links-list_font
+                                    each li in ul
+                                        li= li

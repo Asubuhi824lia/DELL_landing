@@ -8,12 +8,15 @@ block metaVars
 append header
     include header/header_menu
 block main
-    block catalog
-        p Catalog
-    block adventages
-        p Adventages
-    block news
-        p News
+    section.catalog
+        block catalog
+            include main/catalog
+    section.adventages
+        block adventages
+            p Adventages
+    section.news
+        block news
+            p News
 prepend footer
-    include footer/links-footer/links-footer
+    include footer/links-footer
     hr.container

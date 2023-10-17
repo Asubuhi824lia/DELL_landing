@@ -1,0 +1,56 @@
+-
+    const folder = "../../images/2st-catalog/"
+    const catalog = [
+        {
+            header: {p: "01", img: "1.png", margin: "-10px 1px 29px 0;"},
+            description: {preheader: "105 товаров", header: "Ноутбуки"}
+        },
+        {
+            header: {p: "02", img: "2.png", margin: "-21px 0 41px 57px;"},
+            description: {preheader: "65 товаров", header: "Персональные компьютеры"}
+        },
+        {
+            header: {p: "03", img: "3.png", margin: "81px 1px 50px 0;"},
+            description: {preheader: "13 товаров", header: "Cерверы"}
+        },
+        {
+            header: {p: "04", img: "4.png", margin: "59px 1px 51px 0;"},
+            description: {preheader: "2345 товаров", header: "Dell EMC"}
+        },
+        {
+            header: {p: "05", img: "5.png", margin: "38px 0 23px 57px;"},
+            description: {preheader: "195 товаров", header: "Запасные части к Dell EMC"}
+        },
+    ]
+    const classes = {
+        header: ['catalog__card-number', 'font-catalog-card-numbers', 'prim-text-color'],
+        description: {
+            preheader: ['catalog__card-preview-p', 'font-preheader', 'third-text-color'],
+            header: ['catalog__card-preview-p', 'font-catalog-card-header', 'prim-text-color']
+        }
+    }
+
+
+block catalog
+    div(class="container catalog__container")
+        article.catalog__info
+            p.font-header-secondary.prim-text-color.
+                Каталог товаров от Dell
+            p.font-primary-text.catalog__description-text.third-text-color
+                | Наша компания является
+                br
+                | зарегистрированным и официальным
+                br
+                | партнером Dell в России.
+            .primary-btn-container_position_left
+                button.primary-btn= '→'
+                span(class="font-primary-btn-text prim-text-color")= 'В каталог'
+        each card in catalog
+            article.catalog__card
+                section.catalog__card-preview-header
+                    p(class= classes.header).
+                        #{card.header.p}
+                    img(src=folder+card.header.img, style='margin: '+card.header.margin)
+                section.catalog__card-preview-description
+                    p(class= classes.description.preheader)=card.description.preheader
+                    p(class= classes.description.header)=   card.description.header
