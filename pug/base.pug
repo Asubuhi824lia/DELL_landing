@@ -1,3 +1,10 @@
+block fonts
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer)
+
+
 block metaVars
     - var lang      = "en";
     - var charset   = "UTF-8";
@@ -10,8 +17,10 @@ html(lang=lang)
         meta(charset=charset)
         meta(name="viewport", 
             content="width=device-width, initial-scale=1.0")
-        title #{siteTitle}
         link(rel="stylesheet", type="text/css", href="../../css/main.css")
+        title #{siteTitle}
+        block fonts
+        script(src="./slider.js" defer)
     body
         .wrapper
             header.header

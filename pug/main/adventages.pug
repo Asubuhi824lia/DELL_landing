@@ -1,10 +1,7 @@
-include ../mixin
-
-
 -
     const folder_adv = "../../images/3st-advantages/"
     const line = folder_adv+"Vector_card.png"
-    const cards = [
+    const adventages_cards = [
         {
             text: "В наличии широкий ассортимент,<br>а также доступные цены<br>на ноутбуки Dell",
             header: "Самые выгодные<br>и низкие цены",
@@ -29,7 +26,7 @@ include ../mixin
 
 
 block adventages
-    div.container.adventages__container
+    .container.adventages__container
         section.adventages__header
             img(src=folder_adv+"main.png").adventages__header-img
             article.adventages__description
@@ -42,7 +39,7 @@ block adventages
                     span.font-primary-btn-text.prim-text-color.
                         Оставить заявку
         section.adventages__cards
-            each card in cards
+            each card in adventages_cards
                 article(class="adventages__cards-content adventages__card_background")
                     p.adventages__card_text !{card.text}
                     p.adventages__card_font.sec-text-color !{card.header}

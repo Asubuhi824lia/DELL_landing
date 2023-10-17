@@ -94,6 +94,7 @@
     top: 64px;
     left: 390px;
 }
+.news__card-date span {display: block;}
 .news__card-description_paddings {
     padding: 24px 31px 26px 30px;
 }

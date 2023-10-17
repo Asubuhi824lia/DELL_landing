@@ -1,0 +1,71 @@
+include ../mixin
+
+
+-
+    const folder_news = "../../images/4st-news/"
+    const news_cards = [
+        {
+            img: "news_bg_1.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+        {
+            img: "news_bg_2.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+        {
+            img: "news_bg_3.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+        {
+            img: "news_bg_4.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+        {
+            img: "news_bg_5.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+        {
+            img: "news_bg_6.png",
+            header: "GE использует<br>технологии Dell",
+            text: "Вы можете посмотреть ещё больше интересных",
+            date: {num: "11", month: "июля"}
+        },
+    ]
+
+
+block news
+    .container
+        section.news__description
+            article.news__description-textblock
+                p.font-header-secondary.prim-text-color.
+                    Последние новости
+                p(class="news__description-text font-primary-text third-text-color").
+                    Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке
+            section.btn-container
+                .primary-btn-container_position_right
+                    span.font-primary-btn-text.prim-text-color.
+                        Все новости
+                    button.primary-btn.
+                        →
+        section.news__cards
+            each card in news_cards
+                article.news__card(style="background-image: url("+folder_news+card.img+");")
+                    section.news__card-description_paddings
+                        .news__card-description-header
+                            p.news__card-header_font.prim-text-color.
+                                !{card.header}
+                            button.news-btn= '→'
+                        p(style="margin-top: 10px;").news__card-text_font.prim-text-color= card.text
+                    .news__card-date.prim-text-color
+                        span.news__card-date-num_font= card.date.num
+                        span.news__card-date-month_font= card.date.month

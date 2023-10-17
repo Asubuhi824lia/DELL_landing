@@ -1,6 +1,6 @@
 -
     const folder_cat = "../../images/2st-catalog/"
-    const catalog = [
+    const catalog_cards = [
         {
             header: {p: "01", img: "1.png", margin: "-10px 1px 29px 0;"},
             description: {preheader: "105 товаров", header: "Ноутбуки"}
@@ -45,7 +45,7 @@ block catalog
             .primary-btn-container_position_left
                 button.primary-btn= '→'
                 span(class="font-primary-btn-text prim-text-color")= 'В каталог'
-        each card in catalog
+        each card in catalog_cards
             article.catalog__card
                 section.catalog__card-preview-header
                     p(class= classes.header).
