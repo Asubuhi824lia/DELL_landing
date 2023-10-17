@@ -41,7 +41,7 @@
 
 .page_nav li {
     list-style-type: none;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -78,6 +78,6 @@
 
 .buys-count {
     position: relative;
-    left: calc(49px - 33px);
-    bottom: calc(16px + 34px + 13px);
+    left: calc(49px - 32px);
+    bottom: calc(16px + 33px);
 }
